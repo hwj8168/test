@@ -1,0 +1,23 @@
+mybatis:
+    mapper-locations: classpath:mapper/*.xml
+    type-aliases-package: com.hwj.entity
+    configuration:
+        map-underscore-to-camel-case: true
+        default-fetch-size: 100
+
+spring:
+    datasource:
+       url: jdbc:mysql://localhost:3306/competence?useUnicode=true&characterEncoding=UTF-8
+       username: root
+       password: hwj666
+       driver-class-name: com.mysql.jdbc.Driver
+    redis:
+            host: 127.0.0.1
+            port: 6379
+            password:
+            pool:
+              max-active: 100
+              max-idle: 10
+              max-wait: 100000
+            timeout: 0
+
